@@ -1,0 +1,7 @@
+require:
+  - rubocop/cop/lint/feature_revision_consistency.rb
+
+Lint/FeaturesRevisionConsistency:
+  Enabled: <%= ENV.key?("RUBOCOP_RUN_CACHELESS_COPS") %>
+  Exclude:
+    - lib/rubocop/cop/lint/features_revision_consistency.rb
